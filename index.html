@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style type="text/css">
+    
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: 
+    linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon( 100% 0%, 100% 75%, 50% 100%, 0 75%, 0 0);
+
+/* ye yhaa pe path top left 0 0se start huaa firr 5 jagah pe break karke polygon banadiya
+*/
+}
+    #clear{
+      width: 130px;
+    }
+
+.formstyle{
+  width:130px;
+  height: 260;
+  margin: auto;
+  border: 2px solid black;
+
+}
+
+#gotitstyle{
+  width: 119px;
+  height: 40px;
+  border-radius: 30px;
+}
+input{
+width: 40px;
+background-color: white;
+color: #440001;
+}
+  </style>
+  <title>calc</title>
+</head>
+<body>
+<div class="formstyle">
+  <form name="forms" class="hello">
+    <input type="text" name="gotit" id="gotitstyle">
+    <br>
+
+<input style="text-shadow: .2px .6px; height: 43px; border-radius: 30px;" type="button" value=" 1 " onclick="forms.gotit.value += '1'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 2 " onclick="forms.gotit.value += '2'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 3 " onclick="forms.gotit.value += '3'">
+<br>
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 4 " onclick="forms.gotit. value += '4'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 5 " onclick="forms.gotit.value += '5'">
+<input  style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 6 " onclick="forms.gotit.value += '6'">
+<br>
+
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value="  7" onclick="forms.gotit.value += '7'">
+<input  style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 8 " onclick="forms.gotit.value += '8'">
+<input  style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;"type="button" value=" 9 " onclick="forms.gotit.value += '9'">
+<br>
+
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" + " onclick="forms.gotit.value += '+'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" -" onclick="forms.gotit.value += '-'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" * " onclick="forms.gotit.value += '*'">
+
+<br>
+<input  style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;"type="button" value=" /  " onclick="forms.gotit.value += '/'">
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;" type="button" value=" 0 " onclick="forms.gotit.value += '0'">
+
+<input style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;"type="button" value=" = " onclick="forms.gotit.value = eval(forms.gotit.value) ">
+<br>
+
+
+<input  style="text-shadow: .2px .6px; height: 43px;border-radius: 30px;"type="button" value=" Clear all" onclick="forms.gotit.value = ''" id="clear">
+
+
+
+
+
+
+  </form>
+</div>
+<div>
+  <h1>calculate</h1>
+</div>
+</body>
+</html>
